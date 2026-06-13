@@ -1,4 +1,4 @@
-package com.example.crazycoder.interviewprep;
+package com.example.crazycoder.interviewprep.model;
 
 public class Employee {
 

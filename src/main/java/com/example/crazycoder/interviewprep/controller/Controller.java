@@ -1,5 +1,9 @@
-package com.example.crazycoder.interviewprep;
+package com.example.crazycoder.interviewprep.controller;
 
+import com.example.crazycoder.interviewprep.model.Employee;
+import com.example.crazycoder.interviewprep.UserEntity;
+import com.example.crazycoder.interviewprep.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -7,6 +11,19 @@ import java.util.List;
 
 @RestController
 public class Controller {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    @GetMapping("/insert")
+    public void insert() {
+        userRepository.save(new UserEntity(1l,"Aniket"));
+    }
+
+    @PostMapping("/insert")
+    public UserEntity saveUser(@RequestBody UserEntity userEntity) {
+        return userRepository.save(userEntity);
+    }
 
     List<Employee> employees = new ArrayList<>();
 
