@@ -12,9 +12,11 @@ import java.util.List;
 @RestController
 public class Controller {
 
+    //Autowiring
     @Autowired
     private UserRepository userRepository;
 
+    //DB connection testing Learning
     @GetMapping("/insert")
     public void insert() {
         userRepository.save(new UserEntity(1l,"Aniket"));
@@ -27,6 +29,7 @@ public class Controller {
 
     List<Employee> employees = new ArrayList<>();
 
+    //API Learning
     @GetMapping("/message")
     public String getMessage() {
         return "This is my first API";
