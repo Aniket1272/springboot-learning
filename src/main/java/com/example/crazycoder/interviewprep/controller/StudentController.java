@@ -1,6 +1,6 @@
 package com.example.crazycoder.interviewprep.controller;
 
-import com.example.crazycoder.interviewprep.model.Student;
+import com.example.crazycoder.interviewprep.entity.Student;
 import com.example.crazycoder.interviewprep.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

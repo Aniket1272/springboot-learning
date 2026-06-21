@@ -1,6 +1,6 @@
 package com.example.crazycoder.interviewprep.controller;
 
-import com.example.crazycoder.interviewprep.model.Employee;
+import com.example.crazycoder.interviewprep.entity.Employee;
 import com.example.crazycoder.interviewprep.UserEntity;
 import com.example.crazycoder.interviewprep.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.example.crazycoder.interviewprep.services;
 
-import com.example.crazycoder.interviewprep.model.Student;
+import com.example.crazycoder.interviewprep.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

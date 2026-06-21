@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+
+feature:
+  2fa:
+    enabled: false
+    provider: "google-authenticator"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+server:
+  port: 8082
+feature:
+  2fa:
+    enabled: false
+    provider: "authy"
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 8083
+feature:
+  2fa:
+    enabled: true
+    provider: "test-provider"

@@ -1,4 +1,4 @@
-package com.example.crazycoder.interviewprep.model;
+package com.example.crazycoder.interviewprep.entity;
 
 import org.springframework.stereotype.Component;
 
